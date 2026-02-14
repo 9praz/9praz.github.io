@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruch | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="gradient-bg"></div>
+
+    <nav class="sticky-nav">
+        <div class="container nav-content">
+            <div class="nav-brand"><strong>PORTFOLIO</strong></div>
+            <div class="nav-right">
+                <div class="nav-links">
+                    <a href="#about" data-th="เกี่ยวกับ" data-en="About">เกี่ยวกับ</a>
+                    <a href="#projects" data-th="โปรเจกต์" data-en="Projects">โปรเจกต์</a>
+                    <a href="#skills" data-th="ทักษะ" data-en="Skills">ทักษะ</a>
+                    <a href="#education" data-th="การศึกษา" data-en="Education">การศึกษา</a>
+                </div>
+                <button id="lang-switch" class="lang-btn">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="hero-section">
+            <h1 class="name">Pruch Prompanyo</h1>
+            <p class="role" data-th="นักพัฒนาซอฟต์แวร์แบบเต็มรูปแบบ" data-en="FullStack Developer">นักพัฒนาซอฟต์แวร์แบบเต็มรูปแบบ</p>
+            <p class="summary" 
+               data-th="นักพัฒนา Full-Stack ที่กำลังพัฒนาทักษะและเก็บเกี่ยวประสบการณ์จากการทำโปรเจกต์จริง มุ่งมั่นสร้างแอปพลิเคชันที่มีคุณภาพ" 
+               data-en="Aspiring Full-Stack Developer passionate about building real-world applications and continuously improving technical expertise.">
+               นักพัฒนา Full-Stack ที่กำลังพัฒนาทักษะและเก็บเกี่ยวประสบการณ์จากการทำโปรเจกต์จริง มุ่งมั่นสร้างแอปพลิเคชันที่มีคุณภาพ
+            </p>
+            <div class="cta-group">
+                <a href="#" class="btn btn-primary">Download CV</a>
+                <a href="#projects" class="btn btn-secondary" data-th="ผลงานล่าสุด" data-en="Recent Work">ผลงานล่าสุด</a>
+            </div>
+        </header>
+
+        <section id="about" class="about-section">
+            <h2 class="section-label" data-th="เกี่ยวกับฉัน" data-en="About Me">เกี่ยวกับฉัน</h2>
+            <p class="about-text" 
+                  data-th="ผมเป็นนักพัฒนาที่มีเป้าหมายหลักในการก้าวสู่เส้นทาง Game Development โดยมีความหลงใหลในการสร้างประสบการณ์ที่น่าตื่นเต้นผ่านเกม (เช่น ARC Raiders หรือ Battlefield) ในขณะเดียวกันผมก็มีความเชี่ยวชาญในการพัฒนา Full-Stack Website และ Mobile App ด้วย FlutterFlow ผมสนุกกับการนำทักษะด้าน Software Development มาประยุกต์ใช้เพื่อสร้างสรรค์ผลงานที่ใช้งานได้จริงและตอบโจทย์ผู้ใช้งานในทุกรูปแบบ"
+                  data-en="I am a developer with a primary goal of pursuing a career in Game Development, driven by a passion for creating engaging gaming experiences (inspired by titles like ARC Raiders and Battlefield). Alongside this, I possess strong skills in Full-Stack Web and Mobile App development using FlutterFlow. I enjoy applying my software development expertise to build functional, high-quality applications across various platforms.">
+                  ผมเป็นนักพัฒนาที่มีเป้าหมายหลักในการก้าวสู่เส้นทาง Game Development โดยมีความหลงใหลในการสร้างประสบการณ์ที่น่าตื่นเต้นผ่านเกม (เช่น ARC Raiders หรือ Battlefield) ในขณะเดียวกันผมก็มีความเชี่ยวชาญในการพัฒนา Full-Stack Website และ Mobile App ด้วย FlutterFlow ผมสนุกกับการนำทักษะด้าน Software Development มาประยุกต์ใช้เพื่อสร้างสรรค์ผลงานที่ใช้งานได้จริงและตอบโจทย์ผู้ใช้งานในทุกรูปแบบ
+                </p>
+        </section>
+
+        <hr class="divider">
+
+        <div class="layout-grid">
+            <aside class="sidebar">
+                <section id="skills">
+                    <h2 class="section-label" data-th="ทักษะทางเทคนิค" data-en="Technical Skills">ทักษะทางเทคนิค</h2>
+                    <div class="skills-wrapper">
+                        <span class="skill-pill">HTML/CSS/JS</span>
+                        <span class="skill-pill">React</span>
+                        <span class="skill-pill">FlutterFlow</span>
+                        <span class="skill-pill">Node.js</span> <span class="skill-pill">SQL / Supabase</span> <span class="skill-pill">Git / GitHub</span> <span class="skill-pill">REST API</span>
+                        <span class="skill-pill">QA Testing</span> </div>
+                </section>
+
+                <section id="education">
+                    <h2 class="section-label" data-th="การศึกษา" data-en="Education">การศึกษา</h2>
+                    <div class="edu-card">
+                        <p class="edu-title" data-th="บริหารธุรกิจ (ธุรกิจดิจิทัลและนวัตกรรม)" data-en="B.B.A. (Digital Business and Innovation)">บริหารธุรกิจ (ธุรกิจดิจิทัลและนวัตกรรม)</p>
+                        <p class="edu-meta" data-th="มหาวิทยาลัยแม่โจ้, เชียงใหม่" data-en="Maejo University, Chiang Mai">มหาวิทยาลัยแม่โจ้, เชียงใหม่</p>
+                    </div>
+                </section>
+
+                <section id="stats">
+                    <h2 class="section-label" data-th="สถิติเข้าชม" data-en="View Stats">สถิติเข้าชม</h2>
+                    <p style="font-size: 0.85rem; color: var(--text-dim);">
+                        Views: <span id="view-count" style="color: var(--accent-blue); font-weight: 700;">...</span>
+                    </p>
+                </section>
+            </aside>
+
+            <section id="projects" class="main-content">
+                <h2 class="section-label" data-th="โปรเจกต์ล่าสุด" data-en="Recent Projects">โปรเจกต์ล่าสุด</h2>
+                <div id="projects-container" class="repo-stack">
+                    <p style="color: var(--text-dim); font-size: 0.85rem;">Loading projects...</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
