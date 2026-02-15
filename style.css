@@ -195,9 +195,23 @@ body {
         text-align: left;
     }
 
+    .name {
+        font-size: 2.2rem;
+        line-height: 1.1;
+    }
+
     .layout-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 1.5rem;
+    }
+
+    .sidebar {
+        order: 1;
+    }
+
+    .main-content {
+        order: 2;
     }
 
     .section-label {
@@ -211,47 +225,26 @@ body {
         gap: 0.2rem;
     }
 
-    #stats {
-        margin-top: 1rem;
-        padding-top: 1rem;
-        border-top: 1px solid var(--border);
-    }
-}
-
-@media (max-width: 768px) {
-    /* ปรับแต่ง Navbar ให้ดูพรีเมียมขึ้น */
-    .sticky-nav {
-        padding: 0.5rem 0;
-    }
-    
-    .nav-links a {
-        font-size: 0.75rem;
-        letter-spacing: 0.02em;
-    }
-
-    /* จัดการระยะห่างระหว่างกลุ่มปุ่ม CTA */
-    .cta-group {
-        display: flex;
-        gap: 0.8rem;
-        margin-top: 1.5rem;
-    }
-
-    /* ปรับขนาดตัวหนังสือชื่อ (Name) ให้พอดีจอโทรศัพท์ */
-    .name {
-        font-size: 2.2rem;
-        line-height: 1.1;
-    }
-
-    /* ปรับปรุง Skill Pill ให้กด/ดูง่ายขึ้นบนจอสัมผัส */
     .skill-pill {
         padding: 4px 12px;
         font-size: 10px;
         margin-bottom: 0.4rem;
     }
 
-    /* ปรับระยะห่างของการ์ดโปรเจกต์ */
     .repo-card {
         padding: 1rem;
         margin-bottom: 0.8rem;
+    }
+
+    #stats {
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border);
+    }
+
+    .cta-group {
+        display: flex;
+        gap: 0.8rem;
+        margin-top: 1.5rem;
     }
 }
