@@ -178,58 +178,80 @@ body {
 /* Mobile */
 
 @media (max-width: 768px) {
-    .layout-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+    .nav-content {
+        flex-direction: column;
+        gap: 0.8rem;
     }
 
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        gap: 0.8rem;
+        width: 100%;
+    }
+
+    .hero-section {
+        padding: 1.5rem 0 1rem;
+        text-align: left;
+    }
+
+    .layout-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .section-label {
+        margin-top: 0.5rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .skills-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.2rem;
+    }
+
+    #stats {
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border);
+    }
+}
+
+@media (max-width: 768px) {
+    /* ปรับแต่ง Navbar ให้ดูพรีเมียมขึ้น */
+    .sticky-nav {
+        padding: 0.5rem 0;
+    }
+    
+    .nav-links a {
+        font-size: 0.75rem;
+        letter-spacing: 0.02em;
+    }
+
+    /* จัดการระยะห่างระหว่างกลุ่มปุ่ม CTA */
+    .cta-group {
+        display: flex;
+        gap: 0.8rem;
+        margin-top: 1.5rem;
+    }
+
+    /* ปรับขนาดตัวหนังสือชื่อ (Name) ให้พอดีจอโทรศัพท์ */
     .name {
         font-size: 2.2rem;
         line-height: 1.1;
     }
 
-    .sidebar {
-        order: 2;
+    /* ปรับปรุง Skill Pill ให้กด/ดูง่ายขึ้นบนจอสัมผัส */
+    .skill-pill {
+        padding: 4px 12px;
+        font-size: 10px;
+        margin-bottom: 0.4rem;
     }
 
-    .main-content {
-        order: 1;
-    }
-
-    .hero-section {
-        padding: 2.5rem 0 1.5rem;
-    }
-
-    .nav-links {
-        gap: 0.8rem;
-    }
-
-    .nav-links a {
-        font-size: 0.75rem;
-    }
-
-    .about-text {
-        font-size: 0.95rem;
-        line-height: 1.6;
-    }
-
-    .repo-card:hover {
-        transform: none;
-    }
-}
-
-@media (max-width: 480px) {
-    .name {
-        font-size: 1.8rem;
-    }
-    
-    .cta-group {
-        display: flex;
-        flex-direction: column;
-        gap: 0.8rem;
-    }
-
-    .btn-secondary {
-        margin-left: 0;
+    /* ปรับระยะห่างของการ์ดโปรเจกต์ */
+    .repo-card {
+        padding: 1rem;
+        margin-bottom: 0.8rem;
     }
 }
